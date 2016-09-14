@@ -1,4 +1,4 @@
-# Configuring iPython in Hortonworks Data Platform Sandbox (HDP 2.3.2)
+# Configuring iPython in Hortonworks Sandbox (HDP 2.3.2)
 Setting up Hortonworks sandbox for ML including installing and configuring iPython, pySpark and MlLib / ML
 
 There are several prerequisite files that need to be installed. I am using CentOS and yum for this process:

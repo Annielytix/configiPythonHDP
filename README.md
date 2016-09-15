@@ -22,3 +22,34 @@ you can install them all at once using the following command:
           sqlite-devel readline-devel tk-devel \
           gdbm-devel db4-devel libpcap-devel xz-devel \
           libpng-devel libjpg-devel atlas-devel
+
+Next, IPython has a requirement for Python 2.7 or higher. Therefore we need to install the “Development tools” dependency for Python 2.7:
+
+          yum groupinstall "Development tools"
+
+Next, install Python2.7
+
+          yum install python27
+          
+We have to select which version of Python we want to use --> Python 2.7:
+
+          source /opt/rh/python27/enable
+          
+Next, download and install pip (this will simply adding python packages in future, IMHO):
+
+          wget https://bootstrap.pypa.io/get-pip.py
+
+Install:
+
+          python get-pip.py
+          
+Use pip to install the most common data science packages (again, IMHO):
+
+          pip install numpy scipy pandas \
+          scikit-learn tornado pyzmq \
+          pygments matplotlib jsonschema \
+          
+          pip install jinja2 --upgrade
+          
+          
+          

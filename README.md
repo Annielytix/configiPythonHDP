@@ -51,5 +51,15 @@ Use pip to install the most common data science packages (again, IMHO):
           
           pip install jinja2 --upgrade
           
+Next install iPython:
+
+          pip install "ipython[notebook]"
           
+Configure iPython to work with Apache Spark (pyspark interpreter):
+          
+          ipython profile create pyspark
+
+
+          
+
           

@@ -13,4 +13,12 @@ There are several prerequisite files that need to be installed. I am using CentO
 
           yum install libpng-devel libjpg-devel atlas-devel
 
-<img src="file:///Users/ledell/Downloads/ipythonprereq.png"/>
+OR
+
+you can install them all at once using the following command:
+
+          yum install nano centos-release-SCL zlib-devel \
+          bzip2-devel openssl-devel ncurses-devel \
+          sqlite-devel readline-devel tk-devel \
+          gdbm-devel db4-devel libpcap-devel xz-devel \
+          libpng-devel libjpg-devel atlas-devel

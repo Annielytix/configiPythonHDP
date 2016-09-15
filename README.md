@@ -12,3 +12,5 @@ There are several prerequisite files that need to be installed. I am using CentO
           yum install gdbm-devel db4-devel libpcap-devel xz-devel
 
           yum install libpng-devel libjpg-devel atlas-devel
+
+<img src="file:///Users/ledell/Downloads/ipythonprereq.png"/>

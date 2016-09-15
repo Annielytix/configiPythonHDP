@@ -59,7 +59,34 @@ Configure iPython to work with Apache Spark (pyspark interpreter):
           
           ipython profile create pyspark
 
+Generate a Jupyter config file:
 
+          jupyter notebook --generate-config
           
+Next add the following lines of code to the jupyter_notebook_config.py file:
+
+          vi ~/.jupyter/jupyter_notebook_config.py
+
+Lines of code to add:
+
+          #!/bin/bash
+          source /opt/rh/python27/enable
+          IPYTHON_OPTS="notebook --port 8889 \
+          --notebook-dir='/usr/hdp/current/spark-client/' \
+          --ip='*' --no-browser" pyspark
+
+Next create a shell script to launch everytime we use iPython:
+
+          vi ~/start_ipython_notebook.sh
+          
+Lines of code to add:
+
+          #!/bin/bash
+          source /opt/rh/python27/enable
+          IPYTHON_OPTS="notebook" pyspark
+          
+Next, make it executable:
+
+          chmod +x ~/start_ipython_notebook.sh
 
           
